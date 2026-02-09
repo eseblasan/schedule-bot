@@ -7,7 +7,7 @@ from telegram.ext import (
     ContextTypes,
 )
 import os
-TOKEN = os.getenv("Bot_TOKEN")
+TOKEN = os.getenv("BOT_TOKEN")
 
 
 # =========================
