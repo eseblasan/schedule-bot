@@ -7,7 +7,13 @@ from telegram.ext import (
     ContextTypes,
 )
 import os
+
+
 TOKEN = os.getenv("BOT_TOKEN")
+
+if not TOKEN:
+    raise RuntimeError("❌ BOT_TOKEN not found in environment")
+
 
 
 # =========================
