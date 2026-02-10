@@ -7,6 +7,9 @@ from telegram.ext import (
     ContextTypes,
 )
 import os
+import pytz
+KYIV_TZ = pytz.timezone("Europe/Kyiv")
+now = datetime.now(KYIV_TZ)
 
 
 TOKEN = os.getenv("BOT_TOKEN")
